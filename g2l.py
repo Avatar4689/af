@@ -35,6 +35,7 @@ def ctc(path):
             newavlist.append(line.strip().strip('[').strip())
         elif re.search(r'\]',line):
             listline=line.strip().strip(']').strip().split(' ')
+            listline.pop()
             newavlist.append(listline.index(max(listline)))
             qc=[]
             qc=[x[0] for x in groupby(newavlist)]
@@ -43,6 +44,7 @@ def ctc(path):
             total.append(qc)
         else:
             listline=line.strip().strip(' ').split(' ')
+            listline.pop()
             newavlist.append(listline.index(max(listline)))
 if __name__ == '__main__':
     predict=ctc("trans.1.log")+ctc("trans.2.log")+ctc("trans.3.log")+ctc("trans.4.log")+ctc("trans.5.log")+ctc("trans.6.log")+ctc("trans.7.log")+ctc("trans.8.log")
