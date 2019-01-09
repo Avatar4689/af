@@ -114,11 +114,11 @@ if __name__ == "__main__":
     print("the af you want:")
     print("eg:1")
     if len(sys.argv) == 2:
-      adddict(sys.argv[1])
-		p2af('/home/asr2/Kaldi/kaldi-master/eesen-master/asr_egs/lib100/data/train/word.txt','AF_chn_all.txt','AF_eng_all.txt','/home/asr2/Kaldi/kaldi-master/eesen-master/asr_egs/lib100/data/train/text',sys.argv[1])
-		p2af('/home/asr2/Kaldi/kaldi-master/eesen-master/asr_egs/lib100/data/dev/word.txt','AF_chn_all.txt','AF_eng_all.txt','/home/asr2/Kaldi/kaldi-master/eesen-master/asr_egs/lib100/data/dev/text',sys.argv[1])
-		p2af('/home/asr2/Kaldi/kaldi-master/eesen-master/asr_egs/lib100/data/test_th/word.txt','AF_eng_all.txt','AF_chn_all.txt','/home/asr2/Kaldi/kaldi-master/eesen-master/asr_egs/lib100/data/test_th/text',sys.argv[1])
-		p2af('/home/asr2/Kaldi/kaldi-master/eesen-master/asr_egs/lib100/data/test_lib/word.txt','AF_chn_all.txt','AF_eng_all.txt','/home/asr2/Kaldi/kaldi-master/eesen-master/asr_egs/lib100/data/test_lib/text',sys.argv[1])
+        adddict(sys.argv[1])
+        p2af('/home/asr2/Kaldi/kaldi-master/eesen-master/asr_egs/lib100/data/train/word.txt','AF_chn_all.txt','AF_eng_all.txt','/home/asr2/Kaldi/kaldi-master/eesen-master/asr_egs/lib100/data/train/text',sys.argv[1])
+        p2af('/home/asr2/Kaldi/kaldi-master/eesen-master/asr_egs/lib100/data/dev/word.txt','AF_chn_all.txt','AF_eng_all.txt','/home/asr2/Kaldi/kaldi-master/eesen-master/asr_egs/lib100/data/dev/text',sys.argv[1])
+        p2af('/home/asr2/Kaldi/kaldi-master/eesen-master/asr_egs/lib100/data/test_th/word.txt','AF_eng_all.txt','AF_chn_all.txt','/home/asr2/Kaldi/kaldi-master/eesen-master/asr_egs/lib100/data/test_th/text',sys.argv[1])
+        p2af('/home/asr2/Kaldi/kaldi-master/eesen-master/asr_egs/lib100/data/test_lib/word.txt','AF_chn_all.txt','AF_eng_all.txt','/home/asr2/Kaldi/kaldi-master/eesen-master/asr_egs/lib100/data/test_lib/text',sys.argv[1])
     else:
         print("please check the input parameters")
 	
