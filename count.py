@@ -13,7 +13,7 @@ def addto(file, num):
     fwrite = open(file, "r")
     line = fwrite.readline().strip('[').strip('\n').strip(']').strip(' ').split(' ')
     print(line)
-    while len(line)<num:
+    while len(line)<int(num):
         line.append("1")
     fwrite.close()
     print(line)
